@@ -3,6 +3,9 @@ package codingTestWithJava;
 
 import java.util.Arrays;
 
+
+
+
 public class Programmers_coloringBook {
 
     private static final int NOWAY = -2983;
