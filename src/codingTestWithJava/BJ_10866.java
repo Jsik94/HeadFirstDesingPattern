@@ -8,6 +8,7 @@ class 2
 
 latency
  */
+
 /*
 acmicpc.net/problem/10866
 덱

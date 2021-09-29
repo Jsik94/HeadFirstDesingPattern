@@ -2,7 +2,7 @@ package codingTestWithJava;
 /*
 Solved.ac class project
 
-class 10
+class 1
 
  */
 

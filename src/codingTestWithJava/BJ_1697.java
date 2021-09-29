@@ -27,6 +27,9 @@ https://www.acmicpc.net/problem/1697
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class BJ_1697 {
@@ -47,26 +50,60 @@ public class BJ_1697 {
     }
 
     private int solution(int start, int target) {
+        if(start == target){
+            return 0;
+        }
         int[] dp = new int[100001];
 
-//        if(target%2==0){
-//            //짝수 일 때
-//            target/2,target-1
-//        }else{
-//            //홀수 일 때
-//            (target-1)/2
-//            (target+1)/2
-//
-//
-//        }
+        Arrays.fill(dp,Integer.MAX_VALUE);
 
-        return 0;
+
+        Queue<IntPair> queue = new LinkedList<>();
+        queue.add(new IntPair(start,0));
+
+        while (!queue.isEmpty()){
+
+            IntPair cur = queue.poll();
+            System.out.println("현재 cur : " + cur.left + "\tMove :  " + cur.right);
+            int move = cur.right+1;
+            int next = 0;
+            if(cur.left == target){
+                break;
+            }
+
+            for (int i = 0 ; i < 3 ; i++){
+                if(i == 0){
+                    next = cur.left-1;
+                }else if(i == 1){
+                    next = cur.left+1;
+
+                }else{
+                    next = cur.left*2;
+
+                }
+                //문제 범위
+                if(next>=0 && next <100001){
+                    if(dp[next] > move){
+                        queue.add(new IntPair(next,move));
+                        dp [next] = move;
+                    }
+                }
+
+            }
+
+
+        }
+
+        return dp[target];
     }
-//
-//
-//    private boolean isPossibleDown(int cord){
-//
-//    }
 
+    class IntPair{
+        Integer left;
+        Integer right;
 
+        public IntPair(Integer left, Integer right) {
+            this.left = left;
+            this.right = right;
+        }
+    }
 }
