@@ -111,7 +111,6 @@ public class BJ_9019 {
                 break;
             case 1:
                 // n -1 을 저장 n= 0이라면 9999대신 저장
-
                 result = data == 0 ? 9999: data-1;
                 break;
             case 2:
@@ -126,7 +125,6 @@ public class BJ_9019 {
                 break;
         }
 
-//        System.out.println(result);
         return result;
 
     }
