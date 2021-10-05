@@ -48,10 +48,11 @@ public class BJ_1463 {
     }
 
     int solution(int a) {
+
+
         int[] dp = new int[a + 1];
         dp[0] = 0;
         dp[1] = 0;
-
 
         for (int i = 2; i < dp.length; i++) {
             dp[i] = dp[i - 1] + 1;

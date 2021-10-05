@@ -168,6 +168,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/codingTestWithJava/BJ_1107.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/codingTestWithJava/BJ_11279.java">
           <value>
             <PaintGroupHighlightMap />
@@ -843,6 +848,51 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/Axe.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/Character.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/GenericApp.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/Human.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/MyArmy.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/MyGeneric.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/Orc.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/Sword.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/genericStudy/WeaponEffect.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/java_theory/ioPractice/DataIOstream.java">
           <value>
             <PaintGroupHighlightMap />
@@ -854,6 +904,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/java_theory/ioPractice/datas/test.txt">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/lambdaStudy/MyCalculator.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/lambdaStudy/MyInterface.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/lambdaStudy/MyInterfaceImpl.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/streamStudy/ArrayListApp.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/streamStudy/Stream01.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/java_theory/streamStudy/Stream2.java">
           <value>
             <PaintGroupHighlightMap />
           </value>
