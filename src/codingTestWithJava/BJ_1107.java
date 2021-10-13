@@ -47,79 +47,59 @@ public class BJ_1107 {
 
         int error_cnt = Integer.parseInt(br.readLine());
         boolean[] arr = new boolean[10];
-        stk = new StringTokenizer(br.readLine(), " ");
 
-        for (int i = 0; i < error_cnt; i++) {
-            arr[Integer.parseInt(stk.nextToken())] = true;
+        if(error_cnt !=0){
+            stk = new StringTokenizer(br.readLine(), " ");
+            for (int i = 0; i < error_cnt; i++) {
+                arr[Integer.parseInt(stk.nextToken())] = true;
+            }
         }
 
         System.out.println(solution(target, arr));
     }
 
     private int solution(int target, boolean[] arr) {
-//
-//        String[] data = new String(Integer.toString(target)).split("");
-////        boolean[] visit = new boolean[500001];
-//        Queue<Integer> queue = new LinkedList<>();
-//
-////        visit[100] = true;
-//        queue.add(100);
-//        int temp = 0;
-//        int click = 0;
-//        while (!queue.isEmpty()) {
-//
-//            int cur_data = queue.poll();
-//
-//            if (cur_data == target) {
-//                break;
-//            }
-//
-//            click++;
-//
-////            if (!visit[cur_data + 1]) {
-////                visit[cur_data + 1] = true;
-//            queue.add(cur_data + 1);
-////            }
-//
-////            if ((cur_data - 1) < 0) {
-////                if (!visit[0]) {
-////                    visit[0] = true;
-////                    queue.add(0);
-////                }
-////            } else {
-////                if (!visit[cur_data - 1]){
-////                    visit[cur_data - 1] = true;
-////                    queue.add(cur_data - 1);
-////                }
-////            }
-//
-//            if ((cur_data - 1) < 0) {
-//                queue.add(0);
-//            } else {
-//                queue.add(cur_data - 1);
-//            }
-//
-//            for (int i = 0; i < 10; i++) {
-//                if (!arr[i]) {
-////                    if (!visit[cur_data * 10 + i]) {
-////                        visit[cur_data * 10 + i] = true;
-//                        queue.add(cur_data * 10 + i);
-////                    }
-//                }
-//            }
-//
-//
-//        }
-        String object = Integer.toString(target-100);
 
-        for (int i  = 0 ; i < object.length() ;i++){
+        // 100부터 순차적으로 갔을때
+        int count = Math.abs(target -100);
+        for (int i = 0 ; i <= 999999 ; i++){
 
-            if(arr[object.charAt(i)-46]){
+            int press_cnt =getlen(i,arr);
+            if(press_cnt==-1){
+                continue;
+            }
+            int total_cnt=  press_cnt+ Math.abs(target-i);
+            count = Math.min(count,total_cnt);
+        }
 
+
+        return count;
+    }
+
+
+    //해당 i에 대해 갈 수 있다면, 자릿수 반환, 없다면 0 반환
+    private int getlen(int i,boolean[] arr){
+        int result =0;
+
+        //i : 0 인데 고장난경우
+        if (i ==0){
+            if(arr[0]){
+                return -1;
+            }
+            return 1;
+        }
+
+        while(i!= 0){
+            if(arr[i%10]){
+                return -1;
+            }else{
+                result++;
+                i/=10;
             }
         }
 
 
-        return 0;
+        return result;
     }
+
 }
